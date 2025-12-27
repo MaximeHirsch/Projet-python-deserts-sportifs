@@ -1,6 +1,26 @@
 import pandas as pd
 
 def nettoyer_donnees(equipement, df_communes, legislatives2):
+    """
+
+    Nettoie les bases de données importées au départ
+    
+    Paramètres
+    ----------
+    
+    equipement : DataFrame
+
+    df_communes : DataFrame
+
+    legislatives2 : DataFrame
+
+    Return
+    ------
+
+    Les bases de données nettoyées
+    
+    """
+    
     # 1. Traitement Equipement
     new_cols = ["inst_cp", "new_name", "new_code", "dep_code", "aps_name", 
                 "dens_lib", "equip_type_name", "equip_x", "equip_y"]

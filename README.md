@@ -19,7 +19,7 @@ Par Maxime Hirsch et Baptiste Leloup, 2025.
 
 ### Infrastructure sportive
 
-Une infrastructure sportive désigne tout équipement ou installation destiné à la pratique d'activités sportives. Cela inclut les terrains de football, courts de tennis, piscines, gymnases, stades, city-stades, etc.
+Une infrastructure sportive désigne tout équipement ou installation destiné à la pratique d'activités sportives. Cela inclut les terrains de football, courts de tennis, piscines, gymnases, stades, city-stades ...
 
 (Source : [data.sports.gouv.fr](https://data.sports.gouv.fr))
 
@@ -31,9 +31,6 @@ Zone géographique caractérisée par une faible densité d'infrastructures spor
 
 Le revenu médian correspond au revenu qui partage la population en deux groupes égaux : la moitié des ménages a un revenu inférieur à ce seuil, l'autre moitié un revenu supérieur.
 
-### Taux de pauvreté
-
-Pourcentage de la population vivant sous le seuil de pauvreté (60% du niveau de vie médian).
 
 ---
 
@@ -46,10 +43,10 @@ Plus précisément, nous cherchons à :
 1. **Cartographier** la densité des infrastructures sportives par département et commune
 2. **Identifier** les éventuels "déserts sportifs" (zones sous-équipées)
 3. **Analyser** la corrélation entre infrastructures sportives et :
-   - Caractéristiques socio-économiques (revenu médian, taux de pauvreté, population, chômage)
+   - Caractéristiques socio-économiques (revenu médian, population, chômage)
    - Orientation politique des élus (résultats des législatives 2024)
 4. **Modéliser** les déterminants du nombre d'infrastructures par commune
-5. **Sélectionner** les variables les plus pertinentes via régression Lasso
+
 
 ---
 
@@ -80,14 +77,16 @@ Les données sont récupérées autant que possible via les API publiques des so
 
 ### Fichiers principaux
 
-- **`Projet.ipynb`** : Notebook Jupyter contenant l'ensemble des analyses
+- **`main.ipynb`** : Notebook Jupyter contenant l'ensemble des analyses
   - Chargement et nettoyage des données
   - Analyses descriptives
   - Visualisations (cartes, graphiques)
   - Analyses statistiques et économétriques
   - Régression Lasso pour sélection de variables
 
-- **`docs/`** : Dossier hébergé sur GitHub Pages contenant les cartes interactives
+- **`docs/`** : Dossier hébergé sur GitHub Pages contenant les cartes
+
+- **`src`** : Dossier qui contient 
 
 
 
