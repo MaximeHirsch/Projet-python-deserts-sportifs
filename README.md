@@ -2,6 +2,8 @@
 
 Par Maxime Hirsch et Baptiste Leloup, 2025.
 
+**https://maximehirsch.github.io/Projet-python-deserts-sportifs/**
+
 ## Table des matières
 
 1. [Définitions](#1-définitions)
@@ -10,8 +12,6 @@ Par Maxime Hirsch et Baptiste Leloup, 2025.
 4. [Présentation du dépôt](#4-présentation-du-dépôt)
 5. [Visualisation des cartes interactives](#5-visualisation-des-cartes-interactives)
 6. [Méthodologie](#6-méthodologie)
-7. [Résultats principaux](#7-résultats-principaux)
-8. [Licence](#8-licence)
 
 ---
 
@@ -86,7 +86,7 @@ Les données sont récupérées autant que possible via les API publiques des so
 
 - **`docs/`** : Dossier hébergé sur GitHub Pages contenant les cartes
 
-- **`src`** : Dossier qui contient 
+- **`src`** : Dossier qui contient des scripts python, afin d'alléger le code de main.ipynb
 
 
 
@@ -107,8 +107,7 @@ Les cartes sont **hébergées sur GitHub Pages** et accessibles à l'adresse sui
 #### Analyses descriptives
 - Distribution des infrastructures par type
 - Statistiques par département
-- Corrélations entre variables
-
+  
 #### Cartographie
 - Cartes choroplèthes (Folium)
 - Cartes de chaleur (HeatMap)
@@ -118,13 +117,8 @@ Les cartes sont **hébergées sur GitHub Pages** et accessibles à l'adresse sui
 
 **Régressions linéaires (OLS)**
 - Variable dépendante : Nombre d'infrastructures par commune
-- Variables explicatives : population, revenu médian, taux de pauvreté, chômage, nuance politique
+- Variables explicatives : population, revenu médian, chômage, nuance politique
 - Erreurs standard robustes à l'hétéroscédasticité (HC3)
-
-**Sélection de variables (Lasso)**
-- Régularisation L1 pour sélectionner les variables les plus pertinentes
-- Validation croisée (10-fold CV) pour optimiser le paramètre α
-- Variables catégorielles encodées en dummies (drop_first=True)
 
 ---
 
